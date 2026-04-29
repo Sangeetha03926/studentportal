@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Student Login</h2>
+
+    <input type="text" id="name" placeholder="Student Name"><br>
+    <input type="text" id="regno" placeholder="Registration Number"><br>
+
+    <button onclick="login()">Login</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadData()">
+
+<div class="header">
+    <h2>Student Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+    <h3 id="studentName"></h3>
+    <p id="studentReg"></p>
+
+    <h3>Academic Activities</h3>
+    <ul>
+        <li>Assignments</li>
+        <li>Projects</li>
+        <li>Seminars</li>
+    </ul>
+
+    <h3>Exam Results</h3>
+    <table>
+        <tr><th>Subject</th><th>Marks</th></tr>
+        <tr><td>Math</td><td>80</td></tr>
+        <tr><td>Science</td><td>85</td></tr>
+        <tr><td>English</td><td>78</td></tr>
+    </table>
+
+    <h3>Fees Receipt</h3>
+    <p>Status: Paid</p>
+
+    <h3>Time Table</h3>
+    <table>
+        <tr><th>Day</th><th>Subject</th></tr>
+        <tr><td>Monday</td><td>Math</td></tr>
+        <tr><td>Tuesday</td><td>Science</td></tr>
+        <tr><td>Wednesday</td><td>English</td></tr>
+        <tr><td>Thursday</td><td>Computer</td></tr>
+        <tr><td>Friday</td><td>Lab</td></tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
